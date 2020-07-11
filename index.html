@@ -6,88 +6,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Sobre Mim </title>
     <link rel="shortcut icon" type="image/png" href="imagem/logo-ifsp.png" width="75px" height="75px">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 
 <body>
 
-    <div id="tudo">
-        <header>
-            <img class="img__logo" src="imagem/banner-if.png">
-        </header>
-
-        <!--Menu de Navegação -->
-
-        <nav id="menu">
-            <a href="#boasvindas">Home</a> |
-            <a href="#sobre">Sobre</a> |
-            <a href="#sobre">Hobbies</a>
-        </nav>
-
-
-
-        <section id="boasvindas">
-
-            <!--Retrato escolhido-->
-            <div class="avatar__container">
-                <div class="avatar">
-                    <img src="imagem/retrato1.jpg" width="250px" height="300px">
-                </div>
-            </div>
-
-            <!--Seu nome -->
-            <h1> Lucas Vinicius Sousa Silva </h1>
-
-            <!--Suas Redes Sociais -->
-
-
-            <ul class="icones-sociais">
-                <li>
-                    <a href="https://www.facebook.com/profile.php?id=100004270237967" target="_blank" class="facebook">
-                        Facebook
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/caslus_luscas/?hl=pt-br" target="_blank" class="instagram">
-                        Instagram
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/LucasV26" target="_blank" class="github">
-                        Github
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/ViniciLuc" target="_blank" class="email">
-                        Twitter
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/lucas-vinicius-1ab2031a2/" target="_blank" class="linkedin">
-                        LinkedIn
-                    </a>
-                </li>
+    <header>
+        <section id="detalhes">
+            <img src="imagem/banner-if.png" alt="Banner IFSP" width="250px">
+        </section>
+        <nav>
+            <ul>
+                <li> </li>
+                <li> </li>
+                <li> </li>
             </ul>
+        </nav>
+    </header>
 
+    <section id="present">
+        <div class="htitle">
+            <h1> Hi! My name's Lucas... </h1>
+            <h4> And I'm a brazilian Systems Analysis and Development student. </h4>
+        </div>
+        <figure>
+            <img src="imagem/retrato1.jpg" id="eu" alt="This is me" width="200px">
+            <figcaption> This is me :) </figcaption>
+        </figure>
+    </section>
 
+    <section id="main">
+        <div id="aboutme">
+            <div class="htitle">
+                <h2> I'm just a beginner... </h2>
+                <h5> But I'm up to improve! </h5>
+            </div>
+            <p> Right now I'm <span id="idade"></span> years old and I've been studying Information Tecnology for the past <span id="anos"></span>.
+            I've always been into computes and technology, but only for gaming and social medias, so i've onlys tarted studying about programming and IT at college, in 2019.
+            At the moment I'm still studying Systems Analysis and Development at the Federal Institute of São Paulo, in Guarulhos Campus. </p>
+        </div>
+        <div id="preferences">
+            <div class="htitle">
+                <h3> I'm not too much artistically creative... </h3>
+                <h6> But I try my best! </h6>
+            </div>
+            <p> I'm not too much into web development, because I always have a hard time with the artistic part, css and so. But I love the programming side, logic is one of my strenghts. I also like Data Management, organize and relate tables is so cool, and when the queries go right it's so satisfying. I'm still at the SQL basics, but I see a great future. </p>
+        </div>
+        <div id="skills">
+            <h3> These are my knowledges so far: </h3>
+            <div id="imagens">
+                
+            </div>
+            <sub> </sub>
+        </div>
+    </section>
 
-        </section>
+    
 
-
-        <section id="sobre">
-            <h2>SOBRE</h2>
-            <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
-            <p>Nunca estive muito por dentro da área de TI antes de iniciar os estudos na faculdade. Mas sempre fui muito fascinado pela tecnologia.</p>
-			<p>Lógica de programação e Estrutura de Dados são preferências, mas estou tentando melhorar no Desenvolvimento Web</p>
-
-        </section>
-
-        <footer>
-           <img class="img__footer" src="imagem/logo-ifsp.png">
-           <p>&copy;2019 - Lucas Vinicius Sousa Silva
-        </footer>
-    </div>
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 
 </html>
