@@ -31,3 +31,11 @@
     <img class="img__footer" src="imagem/logo-ifsp.png">
   <p>&copy;2019 - Lucas Vinicius Sousa Silva
 </footer>
+
+
+img#capaceteFerro{
+    background-image: url('html.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 65px;
+}
