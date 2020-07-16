@@ -30,6 +30,43 @@
 }
 /*Fim das configurações gerais*/
 /**/
+/*Edições do Cabeçalho*/
+header{
+    background-color: #a7d073a3;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    padding: 0px 10px 10px 10px;
+}
+
+header nav, header img{
+    display: inline-block;
+}
+
+header nav{
+    float: right;
+}
+
+.lista{
+    display: inline-block;
+    margin-right: 10px;
+    padding: 2px 10px 2px 10px;
+    background-color: gray;
+    font-weight: 900;
+    box-shadow: 1px 1px 3px black;
+    text-shadow: 0.5px 0.5px 2px white;
+}
+
+.linkD{
+    color: black;
+    text-decoration: none;
+}
+
+.linkD:hover{
+    text-decoration: none;
+}
+/*Fim das edições do cabeçalho*/
+/**/
 /*Lidando com animações css*/
 
 #cabecalho{
@@ -115,8 +152,9 @@
     margin-left: -5px;
     margin-top: -5px;
     padding: 3px;
-    background-size: 20px;
+    background-size: 1px;
     font-weight: 900;
+    text-shadow: 0.5px 0.5px 3px white;
 }
 
 #ferro, #ferro h4{
@@ -151,44 +189,41 @@
 /*Configurações dorodapé*/
 footer{
     background-color: #a7d073a3;
+    padding: 10px 10px 100px 10px;
+    max-height: 120px;
+}
+
+#contatos, #credencial{
+    display: inline-block;
     text-align: center;
-    padding: 10px 0px 100px 0px;
-    min-height: 100px;
-    font-size: 13px;
-}
-
-#credencial{
-    float: left;
-    margin-left: 50px;
-}
-
-.img__footer{
-    width: 45px;
 }
 
 #contatos{
     float: right;
-    margin-right: 50px;
 }
 
-.icones-sociais li {
+#icones-sociais li{
     display: inline-block;
-}
-
-.icones-sociais a {
+    margin-right: 30px;
     width: 40px;
     height: 40px;
-    display: block;
-    text-indent: -99999px;
-    margin-right:15px;
-    background-size: 25px;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 25px;
 }
 
-.icones-sociais a:hover{
-    transition: 1s;
+#icones-sociais li:hover{
+    transition: 0.5s;
     background-size: 40px;
+}
+
+#icones-sociais a{
+    text-decoration: none;
+    color: transparent;
+}
+
+#icones-sociais a:hover{
+    text-decoration: none;
 }
 
 .github {
@@ -208,5 +243,4 @@ footer{
 .instagram{
     background-image: url("../imagem/insta.png");
 }
-
 /*Fim da área do rodapé*/

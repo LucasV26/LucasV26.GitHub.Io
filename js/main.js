@@ -37,4 +37,25 @@ campo_eu.addEventListener('mouseleave', function(){
     imagem_moldura.style.backgroundImage = "url('imagem/retrato1.jpg')";
 
 })
+
+////
+
+let elemento_lista = document.getElementsByClassName('lista');
+let elemento_linkD = document.getElementsByClassName('linkD');
+
+for(let index in elemento_lista) {
+    elemento_lista[index].addEventListener('mouseenter', function(){
+        elemento_lista[index].style.backgroundColor = 'black';
+        elemento_lista[index].style.paddingTop = '20px';
+        elemento_lista[index].style.transition = '1s';
+        elemento_linkD[index].style.color = 'white';
+    })
+
+    elemento_lista[index].addEventListener('mouseleave', function(){
+        elemento_lista[index].style.backgroundColor = 'gray';
+        elemento_lista[index].style.paddingTop = '2px';
+        elemento_lista[index].style.transition = '1s';
+        elemento_linkD[index].style.color = 'black';
+    })
+}
 //Fim da área de animações
