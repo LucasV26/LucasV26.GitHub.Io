@@ -1,15 +1,29 @@
 @charset "UTF-8";
 
-/*Configurações gerais*/
-#eu{
-    display: inline-block;
+/*Configurações Introdução*/
+#bloco{
     text-align: center;
-    border: 5px inset brown;
-    padding: 20px;
-    margin: 20px;
+}
+
+#present{
+    display: inline-block;
     background-image: url('../imagem/madeiraTextura.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    border: 5px inset brown;
+    padding: 0px 0px 10px 0px;
+}
+
+#present .htitle{
+    border-bottom: 5px outset brown;
+    background-image: url('../imagem/madeiraclaraTextura.jpg');
+}
+
+#eu{
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
 }
 
 #eu img{
@@ -28,7 +42,15 @@
     font-weight: 900;
     padding: 3px;
 }
-/*Fim das configurações gerais*/
+/*Fim das configurações de introdução*/
+/**/
+/*Edição das Informações*/
+#main{
+    display: inline-flex;
+    margin: 20px 10px 20px 10px;
+    padding: 10px;
+}
+/*Fim das edições de informações*/
 /**/
 /*Edições do Cabeçalho*/
 header{
@@ -81,61 +103,94 @@ header nav{
 /*Fim da área de animações*/
 /**/
 /*Configurações dos conhecimentos*/
-#capacetes img{
+#conhecimentos{
+    text-align: center;
+    margin: 5px;
+    background-image: linear-gradient(to right, #6c6870, #72481f, #c0c0c0, #daa520, #a0bfb4);
+}
+
+#conhecimentos h3{
+    color: white;
+    margin-bottom: 0px;
+    padding-bottom: 2px;
+    background-color: black;
+    border-top: 5px solid lightslategray;
+    border-left: 5px solid lightslategray;
+    border-right: 5px solid lightslategray;
+}
+
+#capacetes{
+    display: flex;
+    border: 5px solid lightslategray;
+}
+
+#capacetes img{ 
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 55px;
 }
 /* Ferro: */
 #capPython{
     background-image: url('../imagem/python.png');
+    background-size: 55px;
+}
+#capJava{
+    background-image: url('../imagem/java.png');
+    background-size: 40px;
 }
 /**/
 /* Bronze: */
 #capReact{
     background-image: url('../imagem/react.png');
+    background-size: 65px;
 }
 
 #capPHP{
     background-image: url('../imagem/php.png');
+    background-size: 70px;
 }
 /**/
 /* Prata: */
 #capSQL{
     background-image: url('../imagem/sql.png');
+    background-size: 55px;
 }
 
 #capHTML{
     background-image: url('../imagem/html.png');
+    background-size: 50px;
 }
 
 #capCSS{
     background-image: url('../imagem/css.png');
+    background-size: 55px;
 }
 /**/
 /* Ouro: */
 #capC{
     background-image: url('../imagem/c.png');
+    background-size: 60px;
 }
 
 #capJS{
     background-image: url('../imagem/js.png');
+    background-size: 50px;
 }
 /**/
 /* Platina: */
 #capGit{
     background-image: url('../imagem/git.png');
+    background-size: 70px;
 }
 
 #capGitHub{
     background-image: url('../imagem/githubLogo.png');
+    background-size: 60px;
 }
 /**/
 
 /* Editando diferentes níveis: */
 
 #capacetes div{
-    display: inline-block;
     border-width: 5px;
     border-style: double;
     margin: 5px;
@@ -144,7 +199,7 @@ header nav{
 }
 
 #capacetes h4{
-    display: inline-block;
+    display: block;
     border-bottom-width: 5px;
     border-bottom-style: double;
     border-right-width: 5px;
@@ -204,7 +259,6 @@ footer{
 
 #icones-sociais li{
     display: inline-block;
-    margin-right: 30px;
     width: 50px;
     height: 50px;
     background-position: center;
