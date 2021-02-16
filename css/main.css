@@ -133,20 +133,16 @@ header nav{
     background-image: url('../imagem/python.png');
     background-size: 55px;
 }
-#capJava{
-    background-image: url('../imagem/java.png');
-    background-size: 40px;
+
+#capPHP{
+    background-image: url('../imagem/php.png');
+    background-size: 70px;
 }
 /**/
 /* Bronze: */
 #capReact{
     background-image: url('../imagem/react.png');
     background-size: 65px;
-}
-
-#capPHP{
-    background-image: url('../imagem/php.png');
-    background-size: 70px;
 }
 /**/
 /* Prata: */
@@ -174,6 +170,11 @@ header nav{
 #capJS{
     background-image: url('../imagem/js.png');
     background-size: 50px;
+}
+
+#capJava{
+    background-image: url('../imagem/java.png');
+    background-size: 40px;
 }
 /**/
 /* Platina: */
