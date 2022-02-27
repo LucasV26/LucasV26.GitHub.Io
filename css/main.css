@@ -1,301 +1,123 @@
 @charset "UTF-8";
 
-/*Configurações Introdução*/
-#bloco{
-    text-align: center;
+body, ul, li, p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial;
 }
 
-#present{
-    display: inline-block;
-    background-image: url('../imagem/madeiraTextura.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 5px inset brown;
-    padding: 0px 0px 10px 0px;
+a{
+    color: rgb(53, 53, 199);
 }
 
-#present .htitle{
-    border-bottom: 5px outset brown;
-    background-image: url('../imagem/madeiraclaraTextura.jpg');
-}
-
-#eu{
-    display: inline-block;
-    text-align: center;
-    padding: 20px;
-    margin: 20px;
-}
-
-#eu img{
-    background-image: url('../imagem/retrato1.jpg');
-    background-position: center;
-    background-size: cover;
-    border-radius: 100%;
-    transition: 1s;
-}
-
-#eu figcaption{
-    margin-top: 10px;
-    border: 1.5px dotted gray;
-    display: inline-block;
-    background-image: url('../imagem/madeiraclaraTextura.jpg');
-    font-weight: 900;
-    padding: 3px;
-}
-/*Fim das configurações de introdução*/
-/**/
-/*Edição das Informações*/
-#main{
-    display: inline-flex;
-    margin: 20px 10px 20px 10px;
-    padding: 10px;
-}
-/*Fim das edições de informações*/
-/**/
-/*Edições do Cabeçalho*/
-header{
-    background-color: #a7d073a3;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 1px;
-    padding: 0px 10px 10px 10px;
-}
-
-header nav, header img{
-    display: inline-block;
-}
-
-header nav{
-    float: right;
-}
-
-.lista{
-    display: inline-block;
-    margin-right: 10px;
-    padding: 2px 10px 2px 10px;
-    background-color: gray;
-    font-weight: 900;
-    box-shadow: 1px 1px 3px black;
-    text-shadow: 0.5px 0.5px 2px white;
-}
-
-.linkD{
-    color: black;
-    text-decoration: none;
-}
-
-.linkD:hover{
-    text-decoration: none;
-}
-/*Fim das edições do cabeçalho*/
-/**/
-/*Lidando com animações css*/
-
-#cabecalho{
+nav{
+    border-bottom: 1px solid black;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#cabecalho img{
-    object-position: -200px;
-    transition: 3s;
+nav #logo-block{
+    margin-left: 50px;
 }
 
-/*Fim da área de animações*/
-/**/
-/*Configurações dos conhecimentos*/
-#conhecimentos{
-    text-align: center;
-    margin: 5px;
-    background-image: linear-gradient(to right, #6c6870, #72481f, #c0c0c0, #daa520, #a0bfb4);
+nav #dropdown{
+    margin-right: 50px;
 }
 
-#conhecimentos h3{
-    color: white;
-    margin-bottom: 0px;
-    padding-bottom: 2px;
-    background-color: black;
-    border-top: 5px solid lightslategray;
-    border-left: 5px solid lightslategray;
-    border-right: 5px solid lightslategray;
+nav h1{
+    font-size: 2rem;
 }
 
-#capacetes{
+#dropdown div{
+    margin-left: 10px;
+}
+
+#dropdown{
     display: flex;
-    border: 5px solid lightslategray;
+    justify-content: space-between;
 }
 
-#capacetes img{ 
-    background-position: center;
-    background-repeat: no-repeat;
-}
-/* Ferro: */
-#capPython{
-    background-image: url('../imagem/python.png');
-    background-size: 55px;
-}
-
-#capPHP{
-    background-image: url('../imagem/php.png');
-    background-size: 70px;
-}
-/**/
-/* Bronze: */
-#capReact{
-    background-image: url('../imagem/react.png');
-    background-size: 65px;
-}
-/**/
-/* Prata: */
-#capSQL{
-    background-image: url('../imagem/sql.png');
-    background-size: 55px;
-}
-
-#capHTML{
-    background-image: url('../imagem/html.png');
-    background-size: 50px;
-}
-
-#capCSS{
-    background-image: url('../imagem/css.png');
-    background-size: 55px;
-}
-/**/
-/* Ouro: */
-#capC{
-    background-image: url('../imagem/c.png');
-    background-size: 60px;
-}
-
-#capJS{
-    background-image: url('../imagem/js.png');
-    background-size: 50px;
-}
-
-#capJava{
-    background-image: url('../imagem/java.png');
-    background-size: 40px;
-}
-/**/
-/* Platina: */
-#capGit{
-    background-image: url('../imagem/git.png');
-    background-size: 70px;
-}
-
-#capGitHub{
-    background-image: url('../imagem/githubLogo.png');
-    background-size: 60px;
-}
-/**/
-
-/* Editando diferentes níveis: */
-
-#capacetes div{
-    border-width: 5px;
-    border-style: double;
-    margin: 5px;
-    padding: 5px;
-    background-size: cover;
-}
-
-#capacetes h4{
-    display: block;
-    border-bottom-width: 5px;
-    border-bottom-style: double;
-    border-right-width: 5px;
-    border-right-style: double;
-    margin-left: -5px;
-    margin-top: -5px;
-    padding: 3px;
-    background-size: 1px;
-    font-weight: 900;
-    text-shadow: 0.5px 0.5px 3px white;
-}
-
-#ferro, #ferro h4{
-    border-color: #6c6870;
-    background-image: url('../imagem/ferroTextura.jpg');
-}
-
-#bronze, #bronze h4{
-    border-color: #72481f;
-    background-image: url('../imagem/bronzeTextura.jpg');
-}
-
-#prata, #prata h4{
-    border-color: #c0c0c0;
-    background-image: url('../imagem/prataTextura.jpg');
-}
-
-#ouro, #ouro h4{
-    border-color: #daa520;
-    background-image: url('../imagem/ouroTextura.jpg');
-}
-
-#platina, #platina h4{
-    border-color: #a0bfb4;
-    background-image: url('../imagem/platinaTextura.jpg');
-}
-
-/* Fim da edição de níveis */
-
-/*Fim da área dos conhecimentos*/
-/**/
-/*Configurações dorodapé*/
-footer{
-    background-color: #a7d073a3;
-    padding: 10px 10px 100px 10px;
-    max-height: 120px;
-}
-
-#contatos, #credencial{
-    display: inline-block;
-    text-align: center;
-}
-
-#contatos{
-    float: right;
-}
-
-#icones-sociais li{
-    display: inline-block;
+.hamburger{
     width: 50px;
-    height: 50px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 30px;
+    border: 3px solid black;
+    margin-top: 10px;
 }
 
-#icones-sociais li:hover{
-    transition: 0.5s;
-    background-size: 50px;
+#info-block, #projects-block, #contact-block{
+    text-align: center;
+    margin-top: 50px;
 }
 
-#icones-sociais a{
-    text-decoration: none;
-    color: transparent;
+#info-data{
+    border: 2px solid black;
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 20px 60px;
 }
 
-#icones-sociais a:hover{
-    text-decoration: none;
+#info-flex{
+    display: flex;
+    margin-bottom: 30px;
 }
 
-.github {
-    background-image: url("../imagem/github.png");
+#info-flex img{
+    border-radius: 20px;
 }
 
-.email {
-    background-image: url("../imagem/mail.png");
+#info-flex p{
+    text-align: justify;
+    line-height: 30px;
+    margin-bottom: 15px;
 }
 
-.linkedin {
-    background-image: url("../imagem/linkedin.png");
+#info-flex div{
+    margin-left: 20px;
 }
-.facebook {
-    background-image: url("../imagem/fb.png");
+
+#projects-flex, #contact-flex{
+    border: 2px solid black;
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 20px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
-.instagram{
-    background-image: url("../imagem/insta.png");
+
+#projects-flex > div{
+    flex: 0 1 300px;
+    border: 1px solid black;
+    margin: 30px;
+    padding: 50px 20px;
+    border-radius: 20px;
 }
-/*Fim da área do rodapé*/
+
+#contact-block{
+    margin-bottom: 20px;
+}
+
+.contato{
+    flex: 1 1 400px;
+    margin: 10px;
+    text-align: justify;
+}
+
+.contato img{
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 850px) {
+    #info-flex{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #info-flex p{
+        text-align: center;
+    }
+}

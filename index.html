@@ -1,140 +1,76 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> Sobre Mim </title>
-    <link rel="shortcut icon" type="image/png" href="imagem/logo-ifsp.png" width="75px" height="75px">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-</head>
-
-<body>
-
-    <header>
-        <img src="imagem/banner-if.png" alt="Banner IFSP" width="170px">
-        <nav>
-            <ul id="fastT">
-                <a href="#introduction" class="linkD"> <li class="lista">  INTRODUCTION  </li> </a>
-                <a href="#information" class="linkD"> <li class="lista">  INFORMATION  </li> </a>
-                <a href="#contact" class="linkD"> <li class="lista">  CONTACT </li> </a>
-            </ul>
-        </nav>
-    </header>
-
-    <a id="introduction"></a>
-    <div id="bloco">
-        <section id="present">
-            <div class="htitle">
-                <h1> Hi! My name's Lucas... </h1>
-                <h4> And I'm a brazilian Systems Analysis and Development student. </h4>
-            </div>
-            <figure id="eu">
-                <img id="moldura" src="imagem/moldura.png" alt="This is me" width="200px">
-                <br>
-                <figcaption> THIS IS ME :) </figcaption>
-            </figure>
-        </section>
-    </div>
-
-    <a id="information"></a>
-    <section id="main">
-        <div id="aboutme">
-            <div id="cabecalho">
-                <div class="htitle">
-                    <h2> I'm just a beginner... </h2>
-                    <h5> But I'm up to improve! </h5>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/projetos.js" defer></script>
+        <script src="js/main.js" defer></script>
+        <title>Sobre mim</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div id="logo-block">
+                    <img src="imagem/logo.png" width="59px" alt="Logo">
                 </div>
-                <img id="logo" src="imagem/logo-if-2.jpg" alt="Logo IFSP" width="200px">
-            </div>
-            <p> Right now I'm <span id="idade"></span> years old and I've been studying Information Tecnology for the past <span id="anos"></span>.
-            I've always been into computes and technology, but only for gaming and social medias, so i've only started studying about programming and IT at college, in 2019.
-            At the moment I'm still studying Systems Analysis and Development at the Federal Institute of São Paulo, in Guarulhos Campus. </p>
-        </div>
-        <div id="preferences">
-            <div class="htitle">
-                <h2> I'm not too much artistically creative... </h2>
-                <h5> But I try my best! </h5>
-            </div>
-            <br>
-            <p> I'm not too much into web development, because I always have a hard time with the artistic part, css and so. But I love the programming side, logic is one of my strenghts. I also like Data Management, organize and relate tables is so cool, and when the queries go right it's so satisfying. I'm still at the SQL basics, but I see a great future. </p>
-        </div>
-    </section>
+                <h1> Lucas Vinicius Sousa Silva </h1>
+                <div id="dropdown">
+                    <h3>Menu</h3>
+                    <div>
+                        <div class="hamburger"></div>
+                        <div class="hamburger"></div>
+                        <div class="hamburger"></div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section id="info-block">
+                <h1> Informações Básicas </h1>
+                <div id="info-data">
+                    <div id="info-flex">
+                        <img src="imagem/me.jpg" width="321px" alt="retrato">
+                        <div>
+                            <p> Brasileiro </p>
+                            <p> 21 Anos </p>
+                            <p> Ele/Dele </p>
+                            <p> Solteiro </p>
+                            <p> Graduado em Análise e Desenvolvimento de Sistemas pelo Instituto Federal de Educação, Ciência e Tecnologia de São Paulo, Câmpus Guarulhos </p>
+                            <p> Atualmente desempregado </p>
+                        </div>
+                    </div>
+                    <p id="descricao"></p>
+                </div>
+            </section>
+            <section id="projects-block">
+                <h1> Projetos </h1>
+                <div id="projects-flex">
 
-    <section id="conhecimentos">
-        <h3> These are my knowledges so far: </h3>
-        <div id="capacetes">
-            <div id="ferro">
-                <h4> Level 1: Iron </h4> <br>
-                <img id="capPython" src="imagem/capaceteFerro.png" alt="Borda de Ferro">
-                <img id="capPHP" src="imagem/capaceteBronze.png" alt="Borda de Ferro">
-            </div>
-            <div id="bronze">
-                <h4> Level 2: Bronze </h4> <br>
-                <img id="capReact" src="imagem/capaceteBronze.png" alt="Borda de Bronze">
-            </div>
-            <div id="prata">
-                <h4> Level 3: Silver </h4> <br>
-                <img id="capSQL" src="imagem/capacetePrata.png" alt="Borda de Prata">
-                <img id="capHTML" src="imagem/capacetePrata.png" alt="Borda de Prata">
-                <img id="capCSS" src="imagem/capacetePrata.png" alt="Borda de Prata">
-            </div>
-            <div id="ouro">
-                <h4> Level 4: Gold </h4> <br>
-                <img id="capJS" src="imagem/capaceteOuro.png" alt="Borda de Ouro">
-                <img id="capC" src="imagem/capaceteOuro.png" alt="Borda de Ouro">
-                <img id="capJava" src="imagem/capaceteFerro.png" alt="Borda de Ouro">
-            </div>
-            <div id="platina">
-                <h4> Level 5: Platinum </h4> <br>
-                <img id="capGit" src="imagem/capacetePlatina.png" alt="Borda de Platina">
-                <img id="capGitHub" src="imagem/capacetePlatina.png" alt="Borda de Platina">
-            </div>
-        </div>    
-    </section>
-
-    <a id="contact"></a>
-    <footer>
-        <div id="credencial">
-            <img class="img__footer" src="imagem/logo-ifsp.png" width="50px">
-            <p>&copy;2020 - Lucas Vinicius Sousa Silva </p>
-        </div>
-        <div id="contatos">
-            <ul id="icones-sociais">
-                <a href="https://www.facebook.com/profile.php?id=100004270237967" target="_blank" title="Facebook">
-                    <li class="facebook">
-                        Facebook
-                    </li>
-                </a>
-                <a href="https://www.instagram.com/caslus_luscas/?hl=pt-br" target="_blank" title="Instagram">
-                    <li class="instagram">
-                        Instagram
-                    </li>
-                </a>
-                <a href="https://github.com/LucasV26" target="_blank" title="GitHub">
-                    <li class="github">
-                        GitHub
-                    </li>
-                </a>
-                <a href="https://twitter.com/ViniciLuc" target="_blank" title="Twitter">
-                    <li class="email">
-                        Twitter
-                    </li>
-                </li>
-                <a href="https://www.linkedin.com/in/lucas-vinicius-1ab2031a2/" target="_blank" title="Linkedin">
-                    <li class="linkedin">
-                        LinkedIn
-                    </li>
-                </a>
-            </ul>
-        </div>
-    </footer>
-
-    <script src="js/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-</body>
-
+                </div>
+            </section>
+            <section id="contact-block">
+                <h1> Contato </h1>
+                <div id="contact-flex">
+                    <div class="contato">
+                        <img src="imagem/phone-solid.svg" width="50px" alt="Telefone">
+                        (11) 95461-2022
+                    </div>
+                    <div class="contato">
+                        <img src="imagem/envelope-solid.svg" width="50px" alt="Email">
+                        lucas2606.vinicius@gmail.com
+                    </div>
+                    <div class="contato">
+                        <img src="imagem/linkedin-brands.svg" width="50px" alt="Linkedin">
+                        <a href="https://github.com/LucasV26" target="_blank"> Meu Linkedin </a>
+                    </div>
+                    <div class="contato">
+                        <img src="imagem/github-brands.svg" width="50px" alt="GitHub">
+                        <a href="https://github.com/LucasV26" target="_blank"> Meu GitHub </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
 </html>
