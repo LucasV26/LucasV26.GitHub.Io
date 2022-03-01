@@ -4,6 +4,9 @@ function init() {
 
     const projetos_flex = document.getElementById("projects-flex");
     rend_projetos(projetos_flex);
+
+    const menu_block = document.getElementById("dropdown");
+    menu_block.addEventListener("click", handle_menu_click);
 }
 
 function att_descricao(elemento) {
@@ -24,6 +27,25 @@ function rend_projetos(elemento) {
     }
 
     elemento.innerHTML = saida;
+}
+
+function handle_menu_click(){
+    let ham_invisible_1 = document.getElementById("ham-1");
+    let ham_right = document.getElementById("ham-2");
+    let ham_left =  document.getElementById("ham-3");
+    let ham_invisible_2 = document.getElementById("ham-4");
+
+    if(ham_right.classList.value.indexOf("ham-right") === -1){
+        ham_right.classList.add("ham-right");
+        ham_left.classList.add("ham-left");
+        ham_invisible_1.classList.add("ham-hidden");
+        ham_invisible_2.classList.add("ham-hidden");
+    }else{
+        ham_right.classList.remove("ham-right");
+        ham_left.classList.remove("ham-left");
+        ham_invisible_1.classList.remove("ham-hidden");
+        ham_invisible_2.classList.remove("ham-hidden");
+    }
 }
 
 init();

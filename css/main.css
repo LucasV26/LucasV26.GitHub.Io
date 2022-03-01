@@ -12,6 +12,10 @@ a{
     color: rgb(53, 53, 199);
 }
 
+a.i-link{
+    color: black;
+}
+
 nav{
     border-bottom: 1px solid black;
     display: flex;
@@ -30,11 +34,7 @@ nav #dropdown{
 
 nav h1{
     font-size: 2rem;
-}
-
-#dropdown div{
-    margin-left: 10px;
-}
+} 
 
 #dropdown{
     display: flex;
@@ -45,6 +45,29 @@ nav h1{
     width: 50px;
     border: 3px solid black;
     margin-top: 10px;
+    margin-left: 10px;
+}
+
+#central-lines{
+    height: 16px;
+    position: relative;
+}
+
+#central-lines div {
+    position: absolute;
+    transform-origin: center;
+}
+
+.ham-right{
+    animation: rotate-right 1s ease forwards;
+}
+
+.ham-left{
+    animation: rotate-left 1s ease forwards;
+}
+
+.ham-hidden{
+    animation: disapear 1s ease forwards;
 }
 
 #info-block, #projects-block, #contact-block{
@@ -52,9 +75,9 @@ nav h1{
     margin-top: 50px;
 }
 
-#info-data{
+#info-data, #projects-flex, #contact-flex{
     border: 2px solid black;
-    max-width: 970px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px 60px;
 }
@@ -79,10 +102,6 @@ nav h1{
 }
 
 #projects-flex, #contact-flex{
-    border: 2px solid black;
-    max-width: 970px;
-    margin: 0 auto;
-    padding: 20px 60px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -90,11 +109,16 @@ nav h1{
 }
 
 #projects-flex > div{
-    flex: 0 1 300px;
+    flex: 0 1 350px;
     border: 1px solid black;
     margin: 30px;
     padding: 50px 20px;
     border-radius: 20px;
+    height: 500px;
+}
+
+.projects-card p{
+    margin-top: 70px;
 }
 
 #contact-block{
@@ -109,6 +133,36 @@ nav h1{
 
 .contato img{
     margin-right: 20px;
+}
+
+@keyframes disapear {
+    from {
+        opacity: 100%;
+    }
+
+    to {
+        opacity: 0%;
+    }
+}
+
+@keyframes rotate-right {
+    from {
+        transform: skewY(0deg);
+    }
+
+    to {
+        transform: skewY(45deg);
+    }
+}
+
+@keyframes rotate-left {
+    from {
+        transform: skewY(0deg);
+    }
+
+    to {
+        transform: skewY(-45deg);
+    }
 }
 
 @media screen and (max-width: 850px) {
