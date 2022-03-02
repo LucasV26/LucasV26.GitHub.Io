@@ -5,8 +5,10 @@ function init() {
     const projetos_flex = document.getElementById("projects-flex");
     rend_projetos(projetos_flex);
 
-    const menu_block = document.getElementById("dropdown");
-    menu_block.addEventListener("click", handle_menu_click);
+    const dropdown_block = document.getElementById("dropdown");
+    dropdown_block.addEventListener("click", handle_menu_click);
+
+    window.addEventListener("scroll", handle_window_scroll);
 }
 
 function att_descricao(elemento) {
@@ -30,21 +32,20 @@ function rend_projetos(elemento) {
 }
 
 function handle_menu_click(){
-    let ham_invisible_1 = document.getElementById("ham-1");
-    let ham_right = document.getElementById("ham-2");
-    let ham_left =  document.getElementById("ham-3");
-    let ham_invisible_2 = document.getElementById("ham-4");
+    let menu_block = document.getElementById("menu");
 
-    if(ham_right.classList.value.indexOf("ham-right") === -1){
-        ham_right.classList.add("ham-right");
-        ham_left.classList.add("ham-left");
-        ham_invisible_1.classList.add("ham-hidden");
-        ham_invisible_2.classList.add("ham-hidden");
-    }else{
-        ham_right.classList.remove("ham-right");
-        ham_left.classList.remove("ham-left");
-        ham_invisible_1.classList.remove("ham-hidden");
-        ham_invisible_2.classList.remove("ham-hidden");
+    menu_block.classList.toggle("active");
+    this.classList.toggle("active");
+}
+
+function handle_window_scroll(){
+    let menu_block = document.getElementById("menu");
+
+    if(menu_block.classList.value.indexOf("active") != -1){
+        let dropdown_block = document.getElementById("dropdown");
+
+        menu_block.classList.toggle("active");
+        dropdown_block.classList.toggle("active");
     }
 }
 
